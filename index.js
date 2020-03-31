@@ -28,6 +28,7 @@ function displayResults(responseJson) {
       <p>${responseJson.items[i].snippet.description}</p>
       `);
     $('.firstVid').attr('src', 'https://www.youtube.com/embed/' + results1);
+    $('.firstVid').attr('alt', 'skate video player');
  
     $('#results').removeClass('hidden');
     $('#js-error-message').addClass('hidden');
@@ -39,7 +40,7 @@ function displayResults(responseJson) {
 function getYouTubeVideos(query, maxResults=1) {
   const params = {
     key: apiKey,
-    q: query + " skate video skateboarding",
+    q: query + " skateboarding",
     part: 'snippet',
     maxResults,
     type: 'video',
@@ -78,6 +79,7 @@ function displayResults2(responseJson) {
 
     
     $('.firstVid2').attr('src', 'https://www.youtube.com/embed/videoseries?list=' + results2);
+    $('.firstVid2').attr('alt', 'skate video playlist window');
  
   $('#results').removeClass('hidden');
   $('#js-error-message').addClass('hidden');
