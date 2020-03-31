@@ -24,10 +24,9 @@ function displayResults(responseJson) {
   for (let i = 0; i < responseJson.items.length; i++){
     
     $('#results-list').append(
-      `<li><h3>${responseJson.items[i].snippet.title}</h3>
+      `<h3>${responseJson.items[i].snippet.title}</h3>
       <p>${responseJson.items[i].snippet.description}</p>
-      </li>`);
-    
+      `);
     $('.firstVid').attr('src', 'https://www.youtube.com/embed/' + results1);
  
     $('#results').removeClass('hidden');
@@ -89,7 +88,7 @@ function displayResults2(responseJson) {
 function getYouTubeVideos2(query, maxResults=1) {
   const params = {
     key: apiKey,
-    q: query + " skate",
+    q: query + " skateboarding skate skateboarder",
     part: 'snippet',
     maxResults,
     id: query,

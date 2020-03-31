@@ -7,11 +7,16 @@
     <title>Skate Video Finder</title>
     <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Duru+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1>Search for skate videos!</h1>
+        <div class="head">
+        <h1>Search for skate videos!</h1></div>
+        <br>
 
+
+        <div class="main">
         <form id="js-form">
             <label for="search-term">Search for skate videos featuring: </label>
             <input type="text" name="search-term" id="js-search-term" placeholder="ie tony hawk" required>
@@ -26,12 +31,16 @@
 
         <section id="results" class="hidden">
           <h2>Top Search Result</h2>
-          <iframe class="firstVid" src="" alt="skate video player"></iframe>
+          <div class="iframe-container">
+          <iframe class="firstVid" src="" alt="skate video player"allowfullscreen></iframe></div>
           <ul id="results-list">
           </ul>
           <h2>Playlist Results</h2>
-          <iframe class="firstVid2" src="" alt="skate video player2"></iframe>
+          <div class="iframe-container">
+          <iframe class="firstVid2" src="" alt="skate video player2" allowfullscreen></iframe>
+          </div>
         </section>
+        </div>
     </div>
     
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>

@@ -3,7 +3,15 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Duru Sans', sans-serif; 
+  font-size: 16px;
+  color: #444;
+  text-align: center;
+  line-height: 1.5;
+  margins: auto;
+  text-align: center;
+  background-image: url("images/pinkcheckerboard.jpg");
+
 }
 
 button, input[type="text"] {
@@ -25,4 +33,44 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+
+
+
+.head {
+  background-color: gold;
+  border-style: solid;
+  border: 3 px;
+  border-color:yellow;
+  margin-top:20px;
+}
+
+.main {
+  background-color: white;
+  padding: 30px;
+  margin:20px;
+  border: 3px;
+  border-style: solid;
+  border-color:red;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+ 
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+ 
+/* 4x3 Aspect Ratio */
+.iframe-container-4x3 {
+  padding-top: 75%;
 }
